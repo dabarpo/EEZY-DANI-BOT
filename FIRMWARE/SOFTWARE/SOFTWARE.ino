@@ -63,24 +63,24 @@ void setup(){
      }
    if(f<680&&f>340){
       for(c=30;c<102;c++){
-     Cuerpo.write(c);
-     delay(50);
-     }
-     for(a=50;a>0;a--){
-     Brazo.write(a);
-     delay(50);
-     }
-     for(b=80;b<160;b++){
-     Brazoo.write(b);
-     delay(50);
-   } 
+        Cuerpo.write(c);
+        delay(50);
+      }
+      for(a=50;a>0;a--){
+        Brazo.write(a);
+        delay(50);
+      }
+      for(b=80;b<160;b++){
+         Brazoo.write(b);
+         delay(50);
+      } 
    
      for(d=20;d<30;d++){
-     Pinza.write(d);
-     delay(50);
-   } 
-   }  
-}  
+       Pinza.write(d);
+       delay(50);
+      } 
+    }  
+  }  
 void loop() 
 {  
    if(f<340){//BLUETOOTH    
@@ -159,68 +159,68 @@ void loop()
     }
    if(f<680&&f>340){//AUTOMATIZACION
  
-  for(d=30;d>0;d--){
-    Pinza.write(d);
-    delay(50);
-    }
-  for(a=0;a<50;a++){
-    Brazo.write(a);
-    delay(50);
+      for(d=30;d>0;d--){
+        Pinza.write(d);
+        delay(50);
+        }
+     for(a=0;a<50;a++){
+        Brazo.write(a);
+        delay(50);
     
-   }
+      }
      for(c=102;c>76;c--){
-    Cuerpo.write(c);
-    delay(50);
-    }
-    for(d=0;d<30;d++){
-     Pinza.write(d);
-    delay(50); 
-    }
-   for(c=76;c<102;c++){
-    Cuerpo.write(c);
-    delay(50);
-    }
-    for(a=50;a>0;a--){
-    Brazo.write(a);
-    delay(50);
-    }
+        Cuerpo.write(c);
+        delay(50);
+        }
+     for(d=0;d<30;d++){
+       Pinza.write(d);
+       delay(50); 
+      }
+     for(c=76;c<102;c++){
+       Cuerpo.write(c);
+       delay(50);
+       }
+     for(a=50;a>0;a--){
+       Brazo.write(a);
+       delay(50);
+     }
 
- }
+   }
    
    if(f>680 && f<1500){//TEST DE FUNCIONAMIENTO'0
-   f=2000;
-   for(a=0;a<100;a++){
-     Brazo.write(a);
-     delay(50);
+      f=2000;
+      for(a=0;a<100;a++){
+        Brazo.write(a);
+         delay(50);
+         }
+      for(a=100;a>50;a--){
+         Brazo.write(a);
+        delay(50);
+        }
+      for(b=80;b<130;b++){
+         Brazoo.write(b);
+         delay(50);
+         }
+      for(b=130;b>115;b--){
+         Brazoo.write(b);
+        delay(50);
+       }
+      for(c=30;c<180;c++){
+         Cuerpo.write(c);
+         delay(50);
+       }
+      for(c=180;c>90;c--){
+        Cuerpo.write(c);
+        delay(50);
+      }
+      for(d=20;d<70;d++){
+         Pinza.write(d);
+        delay(50);
+      }
+      for(d=70;d>0;d--){
+        Pinza.write(d);
+        delay(50);
      }
-   for(a=100;a>50;a--){
-     Brazo.write(a);
-     delay(50);
-   }
-   for(b=80;b<130;b++){
-     Brazoo.write(b);
-     delay(50);
-     }
-   for(b=130;b>115;b--){
-     Brazoo.write(b);
-     delay(50);
-   }
-   for(c=30;c<180;c++){
-     Cuerpo.write(c);
-     delay(50);
-     }
-   for(c=180;c>90;c--){
-     Cuerpo.write(c);
-     delay(50);
-   }
-   for(d=20;d<70;d++){
-     Pinza.write(d);
-     delay(50);
-     }
-   for(d=70;d>0;d--){
-     Pinza.write(d);
-     delay(50);
-     }
-     }
-     }
+  }
+}
      
